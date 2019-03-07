@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_03_07_211915) do
 
+  create_table "poll_options", force: :cascade do |t|
+    t.string "option", limit: 80, null: false
+    t.integer "votes", default: 0, null: false
+    t.integer "poll_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["poll_id"], name: "index_poll_options_on_poll_id"
+  end
+
+  create_table "polls", force: :cascade do |t|
+    t.datetime "opens_at", null: false
+    t.datetime "closes_at", null: false
+    t.text "author_email", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  add_foreign_key "poll_options", "polls"
 end
