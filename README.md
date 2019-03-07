@@ -25,32 +25,32 @@ Anyone is free to build and PR a reference implementation or update an implemena
 ## Environment Setup
 In any given subdirectory
 ```
-./bin/bootstrap
-./bin/setup
+./scripts/bootstrap
+./scripts/setup
 ```
 
 ## Build the image
 In any given subdirectory
 ```
-./bin/build
+./scripts/build
 ```
 
 ## Running the Tests
 In any given subdirectory
 ```
-./bin/test
+./scripts/test
 ```
 
 ## Run the Server
 In any given subdirectory
 ```
-./bin/test
+./scripts/test
 ```
 
 ## Run the REPL
 In any given subdirectory
 ```
-./bin/console
+./scripts/console
 ```
 
 ## Contributors
