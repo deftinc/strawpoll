@@ -1,0 +1,10 @@
+tap "buildpack/tap"
+tap "homebrew/cask"
+tap "homebrew/core"
+
+brew "bash-completion@2"
+brew "bash"
+brew "buildpack/tap/pack"
+brew "git"
+brew "rbenv"
+brew "ruby-build"
